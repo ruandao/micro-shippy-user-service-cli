@@ -5,7 +5,7 @@ import (
 	"github.com/go-acme/lego/log"
 	microclient "github.com/micro/go-micro/client"
 	"github.com/micro/go-micro/config/cmd"
-	pb "github.com/ruandao/micro-shippy-user-service/ser/proto/user"
+	pb "github.com/ruandao/micro-shippy-user-service-ser/proto/user"
 	"os"
 )
 
