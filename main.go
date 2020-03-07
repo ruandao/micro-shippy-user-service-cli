@@ -5,6 +5,7 @@ import (
 	"github.com/go-acme/lego/log"
 	microclient "github.com/micro/go-micro/client"
 	"github.com/micro/go-micro/config/cmd"
+	"github.com/ruandao/micro-shippy-user-service-ser/lib"
 	pb "github.com/ruandao/micro-shippy-user-service-ser/proto/user"
 	"os"
 )
@@ -13,7 +14,7 @@ func main() {
 	cmd.Init()
 
 	// Create new greeter client
-	client := pb.NewUserServiceClient("go.micro.srv.user.cli", microclient.DefaultClient)
+	client := pb.NewUserServiceClient(lib.CONST_SER_NAME_USER_SERVICE, microclient.DefaultClient)
 
 	name := "ruandao"
 	email := "ljy080829@gmail.com"
